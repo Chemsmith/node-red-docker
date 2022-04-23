@@ -76,7 +76,6 @@ function docker_build() {
     --build-arg BUILD_REF=${TRAVIS_COMMIT} \
     --build-arg NODE_RED_VERSION=v${NODE_RED_VERSION} \
     --build-arg QEMU_ARCH=${QEMU_ARCH} \
-    --build-arg TAG_SUFFIX=${TAG_SUFFIX} \
     --file ./.docker/${DOCKER_FILE} \
     --tag ${TARGET}:build .
 }

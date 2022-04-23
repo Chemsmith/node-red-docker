@@ -11,6 +11,5 @@ docker build --rm --no-cache \
     --build-arg NODE_RED_VERSION=${NODE_RED_VERSION} \
     --build-arg OS=alpine3.12 \
     --build-arg BUILD_DATE="$(date +"%Y-%m-%dT%H:%M:%SZ")" \
-    --build-arg TAG_SUFFIX=default \
     --file Dockerfile.custom \
     --tag testing:node-red-build .
